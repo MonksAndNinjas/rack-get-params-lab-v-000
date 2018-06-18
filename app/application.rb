@@ -30,6 +30,8 @@ class Application
 
       add_item = req.params["q"]
 
+      if @@items.include?(add_item)
+
     else
       resp.write "Path Not Found"
     end
